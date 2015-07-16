@@ -1,6 +1,6 @@
 # angular-awesome
 
-A set of useful Angular.js extensions implementing common design patterns for an awesome codebase.
+A set of useful [Angular.js](http://angularjs.org) extensions implementing common design patterns for an awesome codebase.
 
 [![Build Status](https://travis-ci.org/doshprompt/angular-awesome.svg?branch=master)](https://travis-ci.org/doshprompt/angular-awesome)
 [![Code Climate](https://codeclimate.com/github/doshprompt/angular-awesome/badges/gpa.svg)](https://codeclimate.com/github/doshprompt/angular-awesome)
@@ -30,8 +30,8 @@ A set of useful Angular.js extensions implementing common design patterns for an
 
 ### Build Dependencies
 
-- node.js >= v0.10.x
-- npm
+- [node.js](https://nodejs.org/) >= v0.10.x (v0.12.x+ preferred)
+- [npm](https://www.npmjs.com/)
 
 ### Dear Developer
 
@@ -61,11 +61,10 @@ bower install angular-awesome --save
 
 Two other options are available:
 
-- [Download the latest release](https://github.com/doshprompt/angular-awesome/archive/master.zip).
-- Clone the repo: `git clone https://github.com/doshprompt/angular-awesome.git`.
+- [Download the latest release](https://github.com/doshprompt/angular-awesome/archive/master.zip)
+- Clone the repo: `git clone https://github.com/doshprompt/angular-awesome.git`
 
-You can then include `angular-awesome` after its dependencies,
-[angular](https://github.com/angular/bower-angular) and
+You can then include `angular-awesome` after its dependency on [angular](https://github.com/angular/bower-angular)
 
 ```html
 <script src="bower_components/angular/angular.js"></script>
@@ -75,7 +74,7 @@ You can then include `angular-awesome` after its dependencies,
 ### Wiring It Up
 
 1. Include the required libraries
-2. Ensure that you inject `ngAwesome` into your app by adding it to the dependency list.
+2. Ensure that you inject `ngAwesome` into your app by adding it to the dependency list
 
 ```js
 angular.module('myApp', ['ngAwesome']);
