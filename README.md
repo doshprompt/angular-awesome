@@ -21,16 +21,6 @@ A set of useful Angular.js extensions implementing common design patterns for an
 - [Getting Started](#getting-started)
     - [Quick Start](#quick-start)
     - [Wiring It Up](#wiring-it-up)
-    - [Module Setup](#module-setup)
-    - [Localization File Formats](#localization-file-formats)
-- [Usage Examples](#usage-examples)
-    - [i18n directive](#i18n-directive)
-        - [Localize Using the i18n attribute](#localize-using-the-i18n-attribute)
-        - [Localize with Dynamic User Data](#localize-with-dynamic-user-data)
-    - [i18nAttr directive](#i18nattr-directive)
-    - [locale service](#locale-service)
-    - [i18n filter](#i18n-filter)
-    - [Sample App](#sample-app)
 - [License](#license)
 
 ## Overview
