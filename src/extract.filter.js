@@ -3,8 +3,8 @@ angular.module('ngAwesome.filters')
         return function(array, property) {
             var result;
 
-            if (!angular.isObject(array)) {
-                return result;
+            if (!angular.isObject(array) || !angular.isString(property)) {
+                return;
             }
 
             if (!angular.isArray(array)) {
