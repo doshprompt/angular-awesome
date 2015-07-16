@@ -4,7 +4,7 @@
   "description": "A set of useful Angular.js extensions implementing common design patterns for an awesome codebase",
   "main": "dist/angular-awesome.js",
   "scripts": {
-    "test": "exit 0",
+    "test": "gulp test",
     "postinstall": "bower install"
   },
   "repository": {

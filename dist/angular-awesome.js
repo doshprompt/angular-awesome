@@ -8,6 +8,33 @@
 ;(function (angular, window, document, undefined) {
     'use strict';
 
-angular.module('ngAwesome', []);
+angular.module('ngAwesome.filters', []);
+
+angular.module('ngAwesome.filters')
+    .filter('extract', function() {
+        return function(array, property) {
+            var result;
+
+            if (!angular.isObject(array) || !angular.isString(property)) {
+                return;
+            }
+
+            if (!angular.isArray(array)) {
+                return [array[property]];
+            }
+
+            result = [];
+
+            angular.forEach(array, function(object) {
+                result.push(object[property]);
+            });
+
+            return result;
+        };
+    });
+
+angular.module('ngAwesome', [
+    'ngAwesome.filters'
+]);
 
 }(this.angular, this, this.document));
