@@ -1,0 +1,17 @@
+sudo: false
+
+language: node_js
+node_js:
+    - "0.12"
+
+addons:
+  code_climate:
+    repo_token:
+      secure: mBf5ybhGtr2tIu30Biyhqw958inILno76Mt5a/45DSz4YAGpQ9/jeseHnEcFi/jb73gGxi4XnRSku4h/idzqF/V6KWmZrjvfHdI/gPO+fW8VAw1etpeVdF2zBzNpP1c6nnKz2FqAabhUbpX0ef2VQLosytgIkdIU2Tf5FZ1BWLxbK4jwpT5joGfUgx9KhGsuX6Mx79fZtXjYmtVLnHBKZ1NBImgzE8UlGPIrLCodTJ86VXGe0DcwrMIVVNTiY4uErX7/xEjIoiEKF5GBweDBt48tU5Q8RsudFETEa/vDU8b1d5PNBhb/X+pO2HqHQQ+UO6Lggz7CtGBXnEQNhhDd9E9O95r3hNiHCwXXYsFR1gorF0l4Sbl2Siw5KQUbFbbR+QMiOw0p/Ng9eEEwh5KiQYTNE53ViXlZQDFpTmkxhltgmHJjO5EONnhuxAJ1GTkP4HQKQNiDHPRs5Qg8qgDM4sTBBl0jfbst8gf0SRqtMtiA9p4F5kRa88E6WOEk4drraA2soOteUHNukCcTxlBcRAzN4N3RY/rP7jDHsMr8+D8/WD98BAvWUygZqRDPcgc0kkgPTpoJ3IQlunDf4xNSmAVDOD3YSyEJRTiXy0zpCJM7eTtLfcb94B7JrdffZp+vqBaCFkwbxCkTOxYH6doLZSLDVMXYyQf9ajK4pidZAcI=
+
+cache:
+  directories:
+    - node_modules
+
+after_success:
+  - ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < coverage/lcov.info
