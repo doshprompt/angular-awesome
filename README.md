@@ -10,6 +10,9 @@ A set of useful Angular.js extensions implementing common design patterns for an
 
 [![Dependency Status](https://david-dm.org/doshprompt/angular-awesome.svg?theme=shields.io)](https://david-dm.org/doshpromot/angular-awesome)
 [![devDependency Status](https://david-dm.org/doshprompt/angular-awesome/dev-status.svg?theme=shields.io)](https://david-dm.org/angular-awesome#info=devDependencies)
+[![Gitter chat](https://badges.gitter.im/doshprompt/angular-awesome.png)](https://gitter.im/doshprompt/angular-awesome)
+[![Stories in Ready](https://badge.waffle.io/doshprompt/angular-awesome.png?label=ready&title=Ready)](https://waffle.io/doshprompt/angular-awesome)
+[![Donate to help support angular-awesome development](http://img.shields.io/gratipay/doshprompt.svg)](https://www.gittip.com/doshprompt/)
 
 ---
 
